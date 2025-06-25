@@ -25,8 +25,8 @@ const Cart = () => {
   };
 
   // Funcion para vaciar carrito
-  const handleClearToCart = () => {
-    dispatch(clearCart());
+  const handleClearToCart = (id) => {
+    dispatch(clearCart(id));
   };
   // Funcion para incrementar un producto en el carrito
   const handleIncremente = (id) => {
@@ -264,7 +264,7 @@ const Cart = () => {
                       price ({cartItemTotal} item)
                     </dt>
                     <dd className="text-sm font-medium text-gray-900">
-                      $ {Number.parseInt(total).toFixed(2)}
+                      $ {Number.parseFloat(total).toFixed(2)}
                     </dd>
                   </div>
 

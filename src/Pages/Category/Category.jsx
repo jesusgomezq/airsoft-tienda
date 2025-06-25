@@ -44,7 +44,6 @@ const Category = () => {
 
   return (
     <Layout>
-      
       <div className="mt-10">
         <div>
           <h1 className="text-center mb-5 font-semibold text-2xl text-bgDesingColor">
