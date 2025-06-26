@@ -25,8 +25,8 @@ const Cart = () => {
   };
 
   // Funcion para vaciar carrito
-  const handleClearToCart = (id) => {
-    dispatch(clearCart(id));
+  const handleClearToCart = () => {
+    dispatch(clearCart());
   };
   // Funcion para incrementar un producto en el carrito
   const handleIncremente = (id) => {
