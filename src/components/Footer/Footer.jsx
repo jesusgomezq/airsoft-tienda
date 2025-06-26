@@ -21,6 +21,7 @@ const Footer = () => {
           <div className="flex items-center capitalize justify-center flex-col mb-3">
             <img className="w-20" src={logoNav} alt="logoNavbar" />
             <h2>combat airsoft</h2>
+            <h2>by: <span className="text-gray-600 font-semibold">jesus gomez</span></h2>
           </div>
         </Link>
         <div className="flex gap-2 text-3xl text-gray-400 justify-center mb-3">
