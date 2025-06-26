@@ -10,7 +10,7 @@ import ProductInfo from "./Pages/ProductIfo/ProductInfo";
 import User from "./Pages/User/User";
 import Admin from "./Pages/Admin/Admin";
 import AddItem from "./Pages/Admin/AddItem";
-import UpdateItem from "./pages/Admin/UpdateItem";
+import UpdateItem from "./Pages/Admin/UpdateItem";
 import State from "./components/context/State";
 import { Toaster } from "react-hot-toast";
 import Category from "./Pages/Category/Category";

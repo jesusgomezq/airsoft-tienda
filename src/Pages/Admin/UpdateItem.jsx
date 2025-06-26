@@ -10,66 +10,6 @@ import {
   
 } from "../../components/constants";
 
-export const repuestosAccData = [
-  {
-    title: "cargadores",
-  },
-  {
-    title: "baterias",
-  },
-  {
-    title: "BBs y gas",
-  },
-  {
-    title: "partes internas",
-  },
-  {
-    title: "granadas y minas",
-  },
-  {
-    title: "supresores",
-  },
-  {
-    title: "trazadoras",
-  },
-  {
-    title: "decorativos",
-  },
-  {
-    title: "miras/opticas",
-  },
-];
-
-export const indumentariaData = [
-  {
-    title: "chalecos",
-  },
-  {
-    title: "cascos",
-  },
-  {
-    title: "fundas",
-  },
-  {
-    title: "uniformes",
-  },
-  {
-    title: "bolsas",
-  },
-  {
-    title: "fundas rigidas",
-  },
-  {
-    title: "cuchillos",
-  },
-  {
-    title: "protección",
-  },
-  {
-    title: "radios",
-  },
-];
-
 const UpdateItem = () => {
   // Context
   const context = useContext(CartContext);
