@@ -6,7 +6,6 @@ const Error = () => {
 
     <div className='flex justify-center container py-36'>
       <img 
-      className=''
       src={error} 
       alt="error" />
     </div>
