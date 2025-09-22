@@ -32,7 +32,7 @@ const AddItem = () => {
     brand: "",
     range: "",
     time: Timestamp.now(),
-    date: new Date().toLocaleDateString("en-US", {
+    date: new Date().toLocaleDateString("en-AR", {
       month: "short",
       day: "2-digit",
       year: "numeric",

@@ -69,6 +69,7 @@ const Admin = () => {
           </div>
           <div>
             <Tabs>
+              
               <TabList className="flex flex-wrap justify-center -m-4 text-center">
                 <Tab className="p-4 md:w-1/3 sm:w-1/2 cursor-pointer w-full">
                   <div
@@ -118,6 +119,7 @@ const Admin = () => {
                   </div>
                 </Tab>
               </TabList>
+
               <TabPanel>
                 <ProductDetail />
               </TabPanel>

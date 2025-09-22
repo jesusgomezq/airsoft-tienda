@@ -88,7 +88,7 @@ const User = () => {
                                     order id
                                   </div>
                                   <div className="text-lg font-medium text-gray-600">
-                                    #{id}
+                                    # {id}
                                   </div>
                                 </div>
                                 <div className="mb-4">

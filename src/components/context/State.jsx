@@ -99,11 +99,14 @@ const State = ({ children }) => {
     }
   };
 
+
   useEffect(() => {
     getProductFunction();
     getOrderFunction();
     getUsersFunction();
   }, []);
+
+  const [searchkey, setSearchkey] = useState('')
 
   return (
     <CartContext.Provider
@@ -115,6 +118,8 @@ const State = ({ children }) => {
         getOrder,
         deleteOrder,
         getUsers,
+        searchkey,
+        setSearchkey
       }}>
       {children}
     </CartContext.Provider>

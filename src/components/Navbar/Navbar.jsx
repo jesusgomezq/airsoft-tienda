@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div>
       {/* Navbar Iuperiro  */}
-      <UpperNavBar />
+      <UpperNavBar/>
 
       {/* NavBar Inferior  */}
       <LowNavBar />

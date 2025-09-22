@@ -5,7 +5,7 @@ import {TbTruckDelivery } from "react-icons/tb";
 const Track = () => {
   return (
     <section>
-      <div className="container mx-auto px-5 py-10 md:py-14">
+      <div className="container mx-auto px-5 py-10 md:py-14 bg-bgBodyColor/20 rounded-xl mb-10">
         <div className="flex flex-wrap -m-4 text-center">
           <div className="p-4 md:w-1/3 sm:w-1/2 w-full">
             <div

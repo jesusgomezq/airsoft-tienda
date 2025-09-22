@@ -63,7 +63,7 @@ const Cart = () => {
     celular: "",
     codigo: "",
     time: Timestamp.now(),
-    date: new Date().toLocaleString("en-US", {
+    date: new Date().toLocaleString("en-AR", {
       month: "short",
       day: "2-digit",
       year: "numeric",
@@ -90,7 +90,7 @@ const Cart = () => {
       userid: user.uid,
       status: "confirmada",
       time: Timestamp.now(),
-      date: new Date().toLocaleString("en-US", {
+      date: new Date().toLocaleString("en-AR", {
         month: "short",
         day: "2-digit",
         year: "numeric",
@@ -234,7 +234,7 @@ const Cart = () => {
                     <div>
                       <button
                         onClick={handleClearToCart}
-                        className="bg-bgDesingColor mt-8 py-3 px-10 text-white
+                        className="bg-red-800 mt-8 py-3 px-10 text-white
                         rounded-xl">
                         vaciar carrito
                       </button>

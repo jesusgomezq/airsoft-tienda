@@ -8,13 +8,13 @@ import { useNavigate } from "react-router-dom";
 const SearchBar = () => {
   // Context
   const context = useContext(CartContext);
-  const { getProducts } = context;
+  const { getProducts, searchkey, setSearchkey } = context;
   // Estado del buscador
-  const [search, setSearch] = useState("");
+  // const [search, setSearch] = useState("");
 
-  const filterSearchData = getProducts
-    .filter((obj) => obj.title.toLowerCase().includes(search))
-    .slice(0, 8);
+  // const filterSearchData = getProducts
+  //   .filter((obj) => obj.title.toLowerCase().includes(search))
+  //   .slice(0, 8);
 
   const naviegate = useNavigate();
   return (
@@ -23,11 +23,13 @@ const SearchBar = () => {
         <input
           type="text"
           placeholder="Search here"
-          onChange={(e) => setSearch(e.target.value)}
+          onChange={(e) => setSearchkey(e.target.value)}
           className="w-[200px] group-hover:w-[300px] transition-all duration-300
            rounded-full border border-gray-400 px-2 py-1 focus:outline-none
           focus:border-1 focus:border-bgDesingColor sm:w-[200px]"
-          value={search}
+          value={searchkey}
+          name="searchkey"
+          id="searchkey"
         />
         <span
           className="absolute text-gray-500 group-hover:text-bgBodyColor
@@ -36,14 +38,14 @@ const SearchBar = () => {
         </span>
       </div>
 
-      <div className="flex justify-center">
-        {search && (
+      {/* <div className="flex justify-center">
+        {searchkey && (
           <div
             className="block absolute bg-gray-300 w-96 md:w-96 lg:w-96
             z-50 my-1 rounded-lg px-2 py-2">
-            {filterSearchData.length > 0 ? (
+            {getProducts.length > 0 ? (
               <>
-                {filterSearchData.map((item, index) => {
+                {getProducts.map((item, index) => {
                   return (
                     <div 
                     onClick={() => naviegate(`productinfo/${item.id}`)}
@@ -75,7 +77,7 @@ const SearchBar = () => {
             )}
           </div>
         )}
-      </div>
+      </div> */}
     </div>
   );
 };

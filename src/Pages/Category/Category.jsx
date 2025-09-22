@@ -10,7 +10,7 @@ import toast from "react-hot-toast";
 const Category = () => {
   // Context
   const context = useContext(CartContext);
-  const { getProducts, loading } = context;
+  const { getProducts, loading, searchkey, setSearchkey} = context;
 
   // Navegamos entre categorias
   const { categorytitle } = useParams();
@@ -84,7 +84,7 @@ const Category = () => {
                                 font-titleFont capitalize text-blue-gray-400 mb-1">
                                 combatAirsoft
                               </h2>
-                              <h1 className="text-lg font-medium text-gray-900 mb-3">
+                              <h1 className="text-xl font-medium text-gray-900 mb-3">
                                 {title.substring(0, 25)}
                               </h1>
                               <div>
@@ -103,14 +103,14 @@ const Category = () => {
                                     onClick={() => deleteItem(item)}
                                     className="bg-bgDesingColor hover:bg-bgBodyColor w-full
                                    text-white py-1.5 rounded-lg transition-all duration-300">
-                                    eliminar del carrito
+                                    Eliminar del carrito
                                   </button>
                                 ) : (
                                   <button
                                     onClick={() => addItem(item)}
                                     className="bg-bgBodyColor hover:bg-bgDesingColor w-full
                                    text-white py-1.5 rounded-lg transition-all duration-300">
-                                    agregrar el carrito
+                                    Agregrar el carrito
                                   </button>
                                 )}
                               </div>

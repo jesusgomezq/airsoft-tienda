@@ -31,7 +31,7 @@ const UpdateItem = () => {
     brand: "",
     range: "",
     time: Timestamp.now(),
-    date: new Date().toLocaleDateString("en-US", {
+    date: new Date().toLocaleDateString("en-AR", {
       month: "short",
       day: "2-digit",
       year: "numeric",
@@ -179,40 +179,6 @@ const UpdateItem = () => {
             />
           </div>
 
-          {/* 
-          <div className="mb-3">
-            <input
-              className="bg-gray-200 border border-gray-400 px-2 py-2 rounded-xl w-96 outline-none
-            placeholder-gray-500"
-              name="title"
-              placeholder="precio original"
-              type="text"
-              onChange={(e) => {
-                setProduct({
-                  ...product,
-                  originalPrice: e.target.value,
-                });
-              }}
-              value={product.originalPrice}
-            />
-          </div> */}
-
-          {/* <div className="mb-3">
-            <input
-              className="bg-gray-200 border border-gray-400 px-2 py-2 rounded-xl w-96 outline-none
-            placeholder-gray-500"
-              name="title"
-              placeholder="Rango"
-              type="text"
-              onChange={(e) => {
-                setProduct({
-                  ...product,
-                  range: e.target.value,
-                });
-              }}
-              value={product.range}
-            />
-          </div> */}
 
           <div className="mb-3">
             <select
@@ -239,32 +205,7 @@ const UpdateItem = () => {
                   );
                 })}
               </optgroup>
-              <optgroup label="repuestos/accesorios">
-                {repuestosAccesoriosData.map((value, i) => {
-                  const { title } = value;
-                  return (
-                    <option
-                      className="first-letter:uppercase text-gray-600"
-                      key={i}
-                      value={title}>
-                      {title}
-                    </option>
-                  );
-                })}
-              </optgroup>
-              <optgroup label="indumantaria">
-                {indumentariaData.map((value, i) => {
-                  const { title } = value;
-                  return (
-                    <option
-                      className="first-letter:uppercase text-gray-600"
-                      key={i}
-                      value={title}>
-                      {title}
-                    </option>
-                  );
-                })}
-              </optgroup>
+             
             </select>
           </div>
 

@@ -9,7 +9,7 @@ import { addToCart, deleteItemToCart } from "../../Redux/cartSlice";
 
 const HomePageProductCard = () => {
   const context = useContext(CartContext);
-  const { loading, getProducts } = context;
+  const { loading, getProducts, searchkey, setSearchkey } = context;
   // Navegavión
   const navigate = useNavigate();
 
@@ -21,7 +21,8 @@ const HomePageProductCard = () => {
     dispatch(addToCart(item));
     toast.success("Agregaste un producto a tu carrito 👍");
   };
-
+ 
+  
   // Funcion para borrar un producto del carrito
   const deleteItem = (item) => {
     dispatch(deleteItemToCart(item));
@@ -47,7 +48,7 @@ const HomePageProductCard = () => {
         <div className="container px-5 py-5 mx-auto">
           <div className="flex justify-center">{loading && <Loader />}</div>
           <div className="flex flex-wrap -m-4">
-            {getProducts.slice(0, 5).map((item, index) => {
+            {getProducts.filter((obj) => obj.title.toLowerCase().includes(searchkey)).slice(0, 5).map((item, index) => {
               const { id, image, title, price, logoBrand } = item;
 
               return (
@@ -68,7 +69,7 @@ const HomePageProductCard = () => {
                         font-titleFont capitalize text-blue-gray-400 mb-1">
                         combatAirsoft
                       </h2>
-                      <h1 className="text-lg font-medium text-gray-900 mb-3">
+                      <h1 className="text-xl font-medium text-gray-900 mb-3">
                         {title.substring(0, 25)}
                       </h1>
                       <div>

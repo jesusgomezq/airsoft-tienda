@@ -66,7 +66,7 @@ const AllProducts = () => {
                         m-1">
                         combat-airsoft
                       </h2>
-                      <h1 className="text-lg font-medium text-gray-900 mb-3">
+                      <h1 className="text-xl font-medium text-gray-900 mb-3">
                         {title.substring(0, 25)}
                       </h1>
                       <h2 className="flex justify-between items-center text-lg text-bgBodyColor mb-3 font-semibold">
@@ -79,14 +79,14 @@ const AllProducts = () => {
                           onClick={() => deleteItem(item)}
                             className="bg-bgDesingColor hover:bg-bgBodyColor w-full
                            text-white py-1.5 rounded-lg transition-all duration-300">
-                            eliminar del carrito
+                            Eliminar del carrito
                           </button>
                         ) : (
                           <button
                           onClick={() => addItem(item)}
                             className="bg-bgBodyColor hover:bg-bgDesingColor w-full
                            text-white py-1.5 rounded-lg transition-all duration-300">
-                            agregrar el carrito
+                            Agregrar el carrito
                           </button>
                         )}
                       </div>

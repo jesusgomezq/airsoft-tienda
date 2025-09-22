@@ -3,6 +3,7 @@ import SearchBar from "../SearchBar/SearchBar";
 import navLogo from "../../assets/logoNavbar.avif";
 import CartWidget from "../CartWidget/CartWidget";
 
+
 const UpperNavBar = () => {
   // Obtenemos el usuario del local
   const user = JSON.parse(localStorage.getItem("users"));
@@ -43,6 +44,7 @@ const UpperNavBar = () => {
           )}
           {!user ? (
             <Link className="text-gray-300 capitalize" to={"/login"}>
+              
               login
             </Link>
           ) : (

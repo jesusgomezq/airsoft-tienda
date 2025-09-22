@@ -20,6 +20,7 @@ export default withMT({
 
       fontFamily: {
         titleFont: ["Orbitron", "sans serif"],
+        bodyFont: ["Questrial", "sans serif"]
       },
     },
   },
