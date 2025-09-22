@@ -8,7 +8,7 @@ import Loader from "../../components/Loader/Loader";
 
 const User = () => {
   // Usuarios
-  const user = JSON.parse(localStorage.getItem("users"));
+  const user = JSON.parse(localStorage.getItem("user"));
 
   const context = useContext(CartContext);
   const { loading, getOrder } = context;
