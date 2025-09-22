@@ -6,7 +6,7 @@ import CartWidget from "../CartWidget/CartWidget";
 
 const UpperNavBar = () => {
   // Obtenemos el usuario del local
-  const user = JSON.parse(localStorage.getItem("user"));
+  const user = JSON.parse(localStorage.getItem("users"));
   // Navegacion
   const navigate = useNavigate();
 
