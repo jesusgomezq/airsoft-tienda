@@ -9,10 +9,11 @@ import {
 } from "../../Redux/cartSlice";
 import toast from "react-hot-toast";
 import { useEffect, useState } from "react";
-import BuyPage from "../../components/BuyPage/BuyPage";
+// import BuyPage from "../../components/BuyPage/BuyPage";
 import { addDoc, collection, Timestamp } from "firebase/firestore";
 import { fireDB } from "../../firebase/firebaseConfig";
 import { Navigate } from "react-router-dom";
+import Modal from "../../components/Modal/Modal";
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart);
@@ -286,9 +287,9 @@ const Cart = () => {
                   </div>
                 </dl>
                 <div className="px-2 pb-4 font-medium text-green-700">
-                  <div className="flex gap-4 mb-6">
+                  <div className="mb-6">
                     {user ? (
-                      <BuyPage
+                      <Modal
                         addressInfo={addressInfo}
                         setAddressInfo={setAddressInfo}
                         buyFunction={buyFunction}

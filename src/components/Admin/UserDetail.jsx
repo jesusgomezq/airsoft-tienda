@@ -56,14 +56,12 @@ const UserDetail = () => {
             {getUsers.map((item, i) => {
               return (
                 <>
-                  <tr 
-                  key={i}
-                  className="text-bgDesingColor">
+                  <tr key={i} className="text-bgDesingColor">
                     <td
                       className="h-12 px-6 text-md transition duration-300 border-t
                 border-l first:border-l-0 border-gray-400 stroke-slate-500 text-slate-500
                 text-green-500 cursor-pointer">
-                      {i +1}
+                      {i + 1}
                     </td>
                     <td
                       className="h-12 px-6 text-md transition duration-300 border-t

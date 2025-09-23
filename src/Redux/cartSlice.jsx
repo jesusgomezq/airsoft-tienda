@@ -16,8 +16,9 @@ export const cartSlice = createSlice({
       return state.filter((item) => item.id !== action.payload.id);
     },
 
-    clearCart() {
-      return initialState;
+     clearCart  ()  {
+      
+       return initialState;
     },
 
     // Incrementamos un producto en el carrito

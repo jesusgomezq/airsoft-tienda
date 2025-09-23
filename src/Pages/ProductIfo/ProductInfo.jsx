@@ -136,7 +136,7 @@ const ProductInfo = () => {
                       {cartItems.some((p) => p.id === product.id) ? (
                         <button
                           onClick={() => deleteItem(product)}
-                          className="focus:outline-none text-gray-300 bg-bgBodyColor  hover:bg-bgDesingColor font-medium rounded-lg py-2 px-6 duration-300 transition-all ml-auto flex first-letter:uppercase">
+                          className="focus:outline-none text-gray-300 bg-red-900  hover:bg-red-500 font-medium rounded-lg py-2 px-6 duration-300 transition-all ml-auto flex first-letter:uppercase">
                           Eliminar del carrito
                         </button>
                       ) : (

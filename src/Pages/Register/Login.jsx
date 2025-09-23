@@ -82,7 +82,7 @@ const Login = () => {
       <div className="flex justify-center items-center h-screen container">
         {loading && <Loader />}
         <div
-          className="bg-blue-gray-200 px-2 lg:px-8 py-6 border border-gray-300
+          className="bg-bgBodyColor/2git 0 px-2 lg:px-8 py-6 border border-gray-300
           rounded-xl shadow-lg">
           <div className="mb-5">
             <h2 className="text-center text-2xl font-bold font-titleFont capitalize">
@@ -94,7 +94,7 @@ const Login = () => {
               <MdAlternateEmail className="absolute ml-1 text-blue-gray-600" />
               <input
                 className="bg-gray-300 border border-gray-400 px-6 py-2 rounded-xl
-                outline-none placeholder-blue-gray-600 w-96"
+                outline-none placeholder-blue-gray-600 w-96 focus:outline-none focus:ring-1 focus:ring-bgBodyColor"
                 placeholder="correo"
                 type="text"
                 value={userLogin.email}
@@ -112,7 +112,7 @@ const Login = () => {
               <LiaUserLockSolid className="absolute ml-1 text-blue-gray-600" />
               <input
                 className="bg-gray-300 border border-gray-400 px-6 py-2 rounded-xl
-                outline-none placeholder-blue-gray-600 w-96"
+                outline-none placeholder-blue-gray-600 w-96 focus:outline-none focus:ring-1 focus:ring-bgBodyColor"
                 placeholder="contraseña"
                 type={showPassword ? 'text' : 'password'}
                 value={userLogin.contraseña}

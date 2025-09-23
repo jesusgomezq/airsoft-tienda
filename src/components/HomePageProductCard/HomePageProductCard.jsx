@@ -82,7 +82,7 @@ const HomePageProductCard = () => {
                         {cartItems.some((p) => p.id === item.id) ? (
                           <button
                             onClick={() => deleteItem(item)}
-                            className="capitalize bg-bgDesingColor hover:bg-bgBodyColor w-full
+                            className="capitalize bg-red-900 hover:bg-red-500 w-full
                           text-white py-1.5 rounded-lg transition-all duration-300">
                             eliminar del carrito
                           </button>

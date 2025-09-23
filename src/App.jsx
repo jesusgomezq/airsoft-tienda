@@ -16,7 +16,7 @@ import { Toaster } from "react-hot-toast";
 import Category from "./Pages/Category/Category";
 import { ProtectedRouteUser } from "./ProtectedRoute/ProtectedRouteUser";
 import {ProtectedRouteAdmin} from './ProtectedRoute/ProtectedRouteAdmin'
-import BuyPage from "./components/BuyPage/BuyPage";
+// import BuyPage from "./components/BuyPage/BuyPage";
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="signup" element={<SignUp />} />
           <Route path="category/:categorytitle" element={<Category/>}/>
-          <Route path="/buypage" element={<BuyPage/>}/>
+          {/* <Route path="/buypage" element={<BuyPage/>}/> */}
           <Route
             path="/user"
             element={
