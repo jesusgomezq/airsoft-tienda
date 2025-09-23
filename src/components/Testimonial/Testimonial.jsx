@@ -31,7 +31,7 @@ function Testimonial() {
                 <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm uppercase">
                   daniel valera
                 </h2>
-                <p className="text-gray-500">nuevo</p>
+                <p className="text-gray-500">Nuevo</p>
               </div>
             </div>
             <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">

@@ -73,7 +73,7 @@ const HomePageProductCard = () => {
                         {title.substring(0, 25)}
                       </h1>
                       <div>
-                        <h2 className="flex justify-between  items-center text-bgBodyColor text-lg font-semibold mb-3">
+                        <h2 className="flex justify-between text-bgBodyColor text-lg font-semibold mb-3">
                           ${Number.parseFloat(price).toFixed(2)}
                           <img className="w-10" src={logoBrand} alt="logo" />
                         </h2>

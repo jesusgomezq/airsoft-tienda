@@ -82,7 +82,7 @@ const Login = () => {
       <div className="flex justify-center items-center h-screen container">
         {loading && <Loader />}
         <div
-          className="bg-bgBodyColor/2git 0 px-2 lg:px-8 py-6 border border-gray-300
+          className="bg-bgBodyColor/10 px-2 lg:px-8 py-6 border border-gray-300
           rounded-xl shadow-lg">
           <div className="mb-5">
             <h2 className="text-center text-2xl font-bold font-titleFont capitalize">

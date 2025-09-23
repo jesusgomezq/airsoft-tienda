@@ -82,7 +82,7 @@ const SignUp = () => {
       <div className="flex justify-center items-center py-44 container">
         {loading && <Loader />}
         <div
-          className="bg-bgBodyColor/20 px-4 lg:px-8 py-6 border border-gray-300
+          className="bg-bgBodyColor/10 px-4 lg:px-8 py-6 border border-gray-300
         rounded-xl shadow-lg">
           <div className="mt-5">
             <h2 className=" mb-4 text-center text-2xl font-bold capitalize text-bgDesingColor font-titleFont">
@@ -91,7 +91,7 @@ const SignUp = () => {
           </div>
           <div className="mb-3">
             <input
-              className="bg-gray-300 capitalize border border-gray-300 px-3 py-2 w-96 rounded-xl
+              className="bg-gray-300 capitalize border border-gray-400 px-3 py-2 w-96 rounded-xl
             outline-none placeholder-gray-600 focus:outline-none focus:ring-1 focus:ring-bgBodyColor"
               placeholder="Nombre"
               type="text"
@@ -106,7 +106,7 @@ const SignUp = () => {
           </div>
           <div className="mb-3">
             <input
-              className="bg-gray-300 capitalize border border-gray-300 px-3 py-2 w-96 rounded-xl
+              className="bg-gray-300 capitalize border border-gray-400 px-3 py-2 w-96 rounded-xl
             outline-none placeholder-gray-600 focus:outline-none focus:ring-1 focus:ring-bgBodyColor"
               placeholder="Apellido"
               type="text"
@@ -121,7 +121,7 @@ const SignUp = () => {
           </div>
           <div className="mb-3">
             <input
-              className="bg-gray-300 border border-gray-300 px-3 py-2 w-96 rounded-xl
+              className="bg-gray-300 border border-gray-400 px-3 py-2 w-96 rounded-xl
             outline-none placeholder-gray-600 focus:outline-none focus:ring-1 focus:ring-bgBodyColor"
               placeholder="Correo"
               type="email"
@@ -136,7 +136,7 @@ const SignUp = () => {
           </div>
           <div className="mb-3">
             <input
-              className="bg-gray-300 border border-gray-300 px-3 py-2 w-96 rounded-xl
+              className="bg-gray-300 border border-gray-400 px-3 py-2 w-96 rounded-xl
             outline-none placeholder-gray-600 focus:outline-none focus:ring-1 focus:ring-bgBodyColor"
               placeholder="Contraseña"
               type="pasword"
