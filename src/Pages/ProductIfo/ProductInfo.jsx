@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { Fragment, useContext, useEffect, useState } from "react";
 import Layout from "../../components/Layout/Layout";
 import { FaFacebookF, FaStar } from "react-icons/fa";
 import { CartContext } from "../../components/context/CartContext";
@@ -12,12 +12,26 @@ import { addToCart, deleteItemToCart } from "../../Redux/cartSlice";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoIosChatboxes } from "react-icons/io";
 import { FcLike } from "react-icons/fc";
+import { Dialog, Transition } from "@headlessui/react";
 
 const ProductInfo = () => {
   const context = useContext(CartContext);
   const { loading, setLoading } = context;
   const [product, setProduct] = useState("");
   const { id } = useParams();
+
+  // Estado del modal
+  let [open, setOpen] = useState(false);
+
+  // Iniciamos funcion para abrir el modal
+  function closeModal() {
+    setOpen(false);
+  }
+
+  // Iniciamos funcion para cerrar el modal
+  function openModal() {
+    setOpen(true);
+  }
 
   // Datos del producto
   const productData = async () => {
